@@ -1,0 +1,12 @@
+'''
+    mutation ($owner_id: ID!, $allowListValue: String!, $name: String!) {
+      createIpAllowListEntry(input: { ownerId: $owner_id, allowListValue: $allowListValue, name: $name, isActive: true }) {
+        ipAllowListEntry {
+          id
+          allowListValue
+          name
+          isActive
+        }
+      }
+    }
+    '''
